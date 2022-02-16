@@ -1,0 +1,215 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.modal {
+  position: absolute;
+  min-height: 581px;
+  width: 528px;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: getColor("bgBasic");
+
+  &__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    top: 7px;
+    right: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: getColor("bgBasic");
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: getColor("active");
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: getColor("secondaryText");
+  }
+
+  &__form {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: getColor("firstText");
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__label {
+    position: relative;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding: 11px 20px 11px 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: 1px solid getColor("active");
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: getColor("firstText");
+  }
+
+  &__contract {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    color: getColor("active");
+    padding-left: 5px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__submit {
+    padding: 10px 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: getColor("bgBasic");
+    background: getColor("active");
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.modal__title--hident {
+  margin-bottom: 12px;
+}
+
+.modal__box--indent {
+  margin-bottom: 10px;
+}
+
+.modal__input--hident {
+  margin-top: 4px;
+}
+
+.modal__checkbox--hident {
+  margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+:-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__input:focus + .modal__picture {
+  fill: getColor("active");
+}
+
+.comment {
+  &__area {
+    display: block;
+    padding: 11px 20px 11px 42px;
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: 1px solid getColor("active");
+    }
+  }
+}
+.comment--hident {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+
+  &:checked + .modal__type {
+    background-color: getColor("active");
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 2px solid getColor("active");
+  }
+}
