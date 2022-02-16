@@ -5,10 +5,11 @@
   &__list {
     width: 44px;
     height: 44px;
-
-    &:not(:first-child) {
-      margin-left: 10px;
-    }
+  }
+}
+.socialNetworks--indent {
+  &:not(:first-child) {
+    margin-left: 10px;
   }
 }
 .socialNetworks__link {

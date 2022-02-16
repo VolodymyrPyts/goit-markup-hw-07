@@ -1,0 +1,49 @@
+.main-team {
+  background-color: getColor("buttonBasic");
+}
+
+.team-Card {
+  display: flex;
+  text-align: center;
+
+  &__list {
+    flex-basis: calc((100%-90px) / 4);
+
+    background-color: getColor("bgBasic");
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 500;
+    color: getColor("secondaryText");
+  }
+
+  &__work {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+.team-Card--indent {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-Card__name--indent {
+  margin-bottom: 10px;
+}
+
+.team-Card__work--indent {
+  margin-bottom: 16px;
+}
