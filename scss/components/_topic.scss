@@ -1,0 +1,44 @@
+.topic-box {
+  padding-top: 0;
+}
+
+.topic-title {
+  margin-bottom: 50px;
+
+  color: getColor("secondaryText");
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.17;
+}
+
+.topic {
+  display: flex;
+
+  &__list {
+    position: relative;
+    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__card {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+
+    text-transform: uppercase;
+    line-height: 1.14;
+    font-weight: 700;
+    text-align: center;
+    color: getColor("bgBasic");
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
