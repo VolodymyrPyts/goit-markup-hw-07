@@ -14,64 +14,62 @@
     <title>WebStudio</title>
 </head>
 <body>
-<header class="header">
-    <!--Шапка сайту-->
-    <div class="container header-container">
-        <a href="./index.html" class="logo header-logo"> Web<span class="logo--bleck">Studio</span></a>
-        <nav>
-            <ul class="navigation">
-                <!--Навігація сайту-->
-                <li class="navigation__list navigation-header "><a href="./index.html"
-                        class="navigation__link "> Студия </a></li>
-                <li class="navigation__list navigation-header navigation--active"><a href="./portfolio.html"
-                        class="navigation__link ">Портфолио</a></li>
-                <li class="navigation__list navigation-header"><a href="#adress-link"
-                        class="navigation__link ">Контакты</a></li>
+    <header class="header">
+        <!--Шапка сайту-->
+        <div class="container header__container">
+            <a href="./index.html" class="logo logo__header"> Web<span class="logo__black">Studio</span></a>
+            <nav>
+                <ul class="navigation">
+                    <!--Навігація сайту-->
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">
+                            Студия </a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link navigation__link--active">Портфолио</a></li>
+                    <li class="navigation__item"><a href="#adress-link" class="navigation__link ">Контакты</a></li>
+                </ul>
+    
+            </nav>
+    
+            <ul class="contact">
+                <!--Наші контакти-->
+                <li class="contact__item item__header">
+    
+                    <a href="mailto:info@devstudio.com" class="navigation__link  ">
+                        <svg class="contact__link" width="16" height="12">
+                            <use href="images/icons.svg#icon-envelope">
+                            </use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contact__item item__header">
+                    <a href="tel:+380961111111" class="navigation__link">
+    
+                        <svg class="contact__link" width="10" height="16">
+                            <use href="images/icons.svg#icon-smartphone">
+                            </use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
-
-        </nav>
-
-        <ul class="contact">
-            <!--Наші контакти-->
-            <li class="navigation__list contact-header">
-
-                <a href="mailto:info@devstudio.com" class=" contact-header navigation__link  ">
-                    <svg class="contact__link" width="16" height="12">
-                        <use href="images/icons.svg#icon-envelope">
-                        </use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li class="navigation__list contact-header">
-                <a href="tel:+380961111111" class="navigation__link">
-
-                    <svg class="contact__link" width="10" height="16">
-                        <use href="images/icons.svg#icon-smartphone">
-                        </use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
+        </div>
+    </header>
 
     <main><!--Тіло сайту-->
-        <section class=" section"> <!--Фільтр-->
+        <section class="section"> <!--Фільтр-->
             <div class="container">
             <h1 class="visually-hidden">
                 Портфолио
             </h1>
-            <ul class="filtr filtr--indent">
-                <li class="filtr__list filtr__list--indent"><button type="button" class="filtr__button">Все</button></li>
-                <li class="filtr__list filtr__list--indent"><button type="button" class="filtr__button">Веб-сайты</button></li>
-                <li class="filtr__list filtr__list--indent"><button type="button" class="filtr__button">Дизайн</button></li>
-                <li class="filtr__list filtr__list--indent"><button type="button" class="filtr__button">Приложения</button></li>
-                <li class="filtr__list filtr__list--indent"><button type="button" class="filtr__button">Маркетинг</button></li>
+            <ul class="filtr filtr__section">
+                <li class="filtr__item"><button type="button" class="filtr__button">Все</button></li>
+                <li class="filtr__item"><button type="button" class="filtr__button">Веб-сайты</button></li>
+                <li class="filtr__item"><button type="button" class="filtr__button">Дизайн</button></li>
+                <li class="filtr__item"><button type="button" class="filtr__button">Приложения</button></li>
+                <li class="filtr__item"><button type="button" class="filtr__button">Маркетинг</button></li>
             </ul>
             <ul class="project">
-                <li class="project__card project__card--indent">
-                    <a href="#" class="project__link link">
+                <li class="project__card ">
+                    <a href="#" class="project__link">
                         <div class="project__images">
                             <img src="images/web-site-1.jpg" alt="Пример Веб-сайта" width="370" height="294" class="project__picture">
                             <div class="project__descript">
@@ -82,7 +80,7 @@
                             </div>
                         </div>
                     <div class="project__cont">
-                        <h2 class="project__name project__name--indent">
+                        <h2 class="project__name">
                             Технокряк
                         </h2>
                         <p class="project__realm">
@@ -93,8 +91,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/design-1.jpg" alt="Пример дизайна" width="370" height="294" class="project__picture">
                         <div class="project__descript">
@@ -105,7 +103,7 @@
                         </div>
                         </div>
                         <div class="project__cont">
-                        <h2 class="project__name project__name--indent">
+                        <h2 class="project__name">
                             Постер New Orlean vs Golden Star
                         </h2>
                         <p class="project__realm">
@@ -115,8 +113,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/app-1.jpg" alt="Пример разработанного приложения" width="370" height="294" class="project__picture">
                         <div class="project__descript">
@@ -127,7 +125,7 @@
                         </div>
                         </div>
                         <div class="project__cont">
-                            <h2 class="project__name project__name--indent">
+                            <h2 class="project__name">
                             Ресторан Seafood
                         </h2>
                         <p class="project__realm">
@@ -137,8 +135,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/marketing-1.jpg" alt="Направление маркетинговых работ" width="370" height="294"
                             class="project__picture">
@@ -150,7 +148,7 @@
                         </div>
                         </div>
                         <div class="project__cont">
-                            <h2 class="project__name project__name--indent">
+                            <h2 class="project__name">
                             Проект Prime
                         </h2>
                         <p class="project__realm">
@@ -160,8 +158,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/app-2.jpg" alt="Пример разработанного приложения" width="370" height="294"
                             class="project__picture">
@@ -173,7 +171,7 @@
                             </div>
                             </div>
                         <div class="project__cont">
-                            <h2 class="project__name project__name--indent">
+                            <h2 class="project__name">
                             Проект Boxes
                         </h2>
                         <p class="project__realm">
@@ -183,8 +181,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/web-site-2.jpg" alt="Пример Веб-сайта" width="370" height="294" class="project__picture">
                         <div class="project__descript">
@@ -195,7 +193,7 @@
                         </div>
                         </div>
                         <div class="project__cont">
-                        <h2 class="project__name project__name--indent">
+                        <h2 class="project__name">
                             Inspiration has no Borders
                         </h2>
                         <p class="project__realm">
@@ -205,8 +203,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/design-2.jpg" alt="Пример дизайна" width="370" height="294" class="project__picture">
                         <div class="project__descript">
@@ -217,7 +215,7 @@
                         </div>
                         </div>
                         <div class="project__cont">
-                        <h2 class="project__name project__name--indent">
+                        <h2 class="project__name">
                             Издание Limited Edition
                         </h2>
                         <p class="project__realm">
@@ -227,8 +225,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/marketing-2.jpg" alt="Направление маркетинговых работ" width="370" height="294"
                             class="project__picture">
@@ -240,7 +238,7 @@
                             </div>
                             </div>
                         <div class="project__cont">
-                            <h2 class="project__name project__name--indent">
+                            <h2 class="project__name">
                             Проект LAB
                         </h2>
                         <p class="project__realm">
@@ -250,8 +248,8 @@
                     </a>
                 </li>
 
-                <li class="project__card project__card--indent">
-                    <a href="" class="project__link link">
+                <li class="project__card ">
+                    <a href="" class="project__link">
                         <div class="project__images">
                         <img src="images/app-3.jpg" alt="Пример разработанного приложения" width="369" height="294"
                             class="project__picture">
@@ -263,7 +261,7 @@
                             </div>
                             </div>
                         <div class="project__cont">
-                            <h2 class="project__name project__name--indent">
+                            <h2 class="project__name">
                             Growing Business
                         </h2>
                         <p class="project__realm">
@@ -280,43 +278,43 @@
 
     <footer class="footer ">
         <!--Подвал сайта, наши контакты-->
-        <div class="container footer-block">
+        <div class="container container__footer">
             <div class="footer__adres">
-                <a href="" class="logo footer-logo link ">Web<span class="logo--white">Studio</span></a>
+                <a href="" class="logo logo__footer">Web<span class="logo__white">Studio</span></a>
                 <address class="adress" id="adress-link">
     
                     <ul>
-                        <li class="adress__list"><a href="https://goo.gl/maps/BZQKdsraXfpykEwU6" class=" adress__link"
+                        <li class="adress__item"><a href="https://goo.gl/maps/BZQKdsraXfpykEwU6" class=" adress__link"
                                 target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="adress__list"><a href="mailto:info@devstudio.com"
+                        <li class="adress__item"><a href="mailto:info@devstudio.com"
                                 class="adress__link adress__link--transparent">info@devstudio.com</a></li>
-                        <li class="adress__list"><a href="tel:+380961111111"
+                        <li class="adress__item"><a href="tel:+380961111111"
                                 class="adress__link adress__link--transparent">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
             <div class="social footer-social">
-                <h2 class="social__title">присоединяйтесь</h2>
+                <h2 class="footer__title">присоединяйтесь</h2>
                 <ul class="socialNetworks">
-                    <li class="socialNetworks__list socialNetworks--indent">
+                    <li class="socialNetworks__item">
                         <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
                                 width="20" height="20">
                                 <use href=" images/icons.svg#icon-instagram"></use>
                             </svg></a>
                     </li>
-                    <li class="socialNetworks__list socialNetworks--indent">
+                    <li class="socialNetworks__item">
                         <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
                                 width="20" height="20">
                                 <use href=" images/icons.svg#icon-twitter"></use>
                             </svg></a>
                     </li>
-                    <li class="socialNetworks__list socialNetworks--indent">
+                    <li class="socialNetworks__item">
                         <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
                                 width="20" height="20">
                                 <use href=" images/icons.svg#icon-facebook"></use>
                             </svg></a>
                     </li>
-                    <li class="socialNetworks__list socialNetworks--indent">
+                    <li class="socialNetworks__item">
                         <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
                                 width="20" height="20">
                                 <use href=" images/icons.svg#icon-linkedin"></use>
@@ -326,7 +324,7 @@
             </div>
             <form>
                 <div class="connection">
-                    <h2 class="social__title">Подпишитесь на рассылку</h2>
+                    <h2 class="footer__title">Подпишитесь на рассылку</h2>
                     <input type="email" name="connection" placeholder="E-mail" class="connection__input" required>
     
                     <button type="submit" class="connection__btn">Подписаться <svg width="24" height="24"

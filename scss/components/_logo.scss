@@ -1,5 +1,3 @@
-@import "../utils/variables";
-
 .logo {
   display: block;
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -9,17 +7,17 @@
   text-decoration: none;
 
   color: getColor("active");
-
-  &--bleck {
-    color: getColor("logoHeader");
-  }
-  &--white {
-    color: getColor("bgBasic");
-  }
 }
-.header-logo {
+.logo__black {
+  color: getColor("logoHeader");
+}
+.logo__white {
+  color: getColor("bgBasic");
+}
+
+.logo__header {
   margin-right: 93px;
 }
-.footer-logo {
+.logo__footer {
   margin-bottom: 20px;
 }

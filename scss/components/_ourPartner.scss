@@ -1,38 +1,40 @@
 .ourPartner {
   display: flex;
+}
 
-  &__list {
-    margin-right: 30px;
-    width: 170px;
-    height: 92px;
+.ourPartner__item {
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
   }
-  &__links {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+}
 
-    fill: getColor("social");
-    cursor: pointer;
-    border: 1px solid getColor("social");
-    border-radius: 4px;
+.ourPartner__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: getColor("social");
+  cursor: pointer;
+  border: 1px solid getColor("social");
+  border-radius: 4px;
 
-    &:hover,
-    &:focus {
-      fill: getColor("active");
-      border-color: getColor("active");
-    }
+  transition: fill getAnime("anime") getCube("Cube"),
+    border-color getAnime("anime") getCube("Cube");
+
+  &:hover,
+  &:focus {
+    fill: getColor("active");
+    border-color: getColor("active");
   }
-  &__icon {
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+}
+
+.ourPartner__icon {
+  background-position: center;
+  background-repeat: no-repeat;
 }
