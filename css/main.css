@@ -819,7 +819,7 @@ img {
 
 .checkbox:checked + .modal__type {
   background-color: #2196f3;
-  background-image: url(../../images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -208,7 +208,7 @@
 }
 .checkbox:checked + .modal__type {
   background-color: getColor("active");
-  background-image: url(../../images/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
